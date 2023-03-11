@@ -1,0 +1,82 @@
+\documentclass{report}
+\AfterPreamble{\hypersetup{
+  pdfauthor={Eyob Ghebreiesus},
+  pdfproducer = {https://eyobghiday.com},
+  pdfcreator = {Eyob Ghiday},
+  pdftitle={Application of PINN’s in Fluid Mechanics},
+  pdfsubject={MMAEE-500 Data Driven Modeling}}}
+\usepackage{placeins}
+\usepackage{multirow}
+\usepackage{comment}
+\usepackage[x11names]{xcolor}
+\usepackage{geometry}
+\usepackage{tabularx}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.4mm}}
+\usepackage{wrapfig}
+\usepackage{lmodern}
+% \usepackage{framed}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+
+\usepackage[backend=biber]{biblatex}
+\addbibresource{bibtex.bib}
+\usepackage{tabularx}
+\usepackage{indentfirst}
+\usetikzlibrary{shapes, arrows}
+\begin{document}
+
+\newpage
+\begin{center}
+
+\small\textsc{\href{https://github.com/eyobghiday/project-hurrisat}{PROJECT PROPOSAL}}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{.1in}\\
+\large Application of PINN's in Fluid Mechanics\\[.1in]
+\end{center}
+
+\small \href{}{MMAE-500 Data Driven Modeling, } 
+\small \href{www.iit.edu}{Illinois Tech}
+\vspace{.2in}\\
+\textit{February $25^{th}$, 2023}\\[.08in]
+
+\end{center}
+\href{mailto:eghebreiesus@hawk.iit.edu}{Eyob Ghebreiesus}\\
+\small GitHub Source Code:\\
+\href{https://github.com/eyobghiday/PINNs-in-Fluid-Mechanics}{\textit{https://github.com/eyobghiday/PINNs-in-Fluid-Mechanics}}\\[.08in]
+\begin{center}
+\href{https://www.iit.edu/mmae}{Department of Mechanical, Materials and Aerospace Engineering}
+\vspace{.05in}
+
+\end{center}
+\noindent\rule{\textwidth}{0.4pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RE,LO]{\href{}{MMAE-500}}
+\fancyhead[LE,RO]{\href{}{Data Driven Modeling}}
+% \fancyfoot[CE,CO]{\leftmark}
+\fancyfoot[CE,CO]{\thepage}
+\renewcommand{\headrulewidth}{.8pt}
+\renewcommand{\footrulewidth}{.8pt}
+% 
+\begingroup
+\hypersetup{linkcolor=black}
+
+\pagenumbering{arabic}
+\section{Introduction}\label{s:in}
+    \input{Sections/Introduction}
+    
+\section{Main Goal}\label{s:gp}
+    \input{Sections/Goals.tex}
+
+\section{Approach Methodology}\label{s:sc}
+   \input{Sections/Methods.tex} 
+   
+\section{Expectation}\label{s:gl}
+    \input{Sections/Results.tex}
+       
+\section{Conclusion}\label{s:co}
+    \input{Sections/Conclusion}
+
+\end{document}
