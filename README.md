@@ -1,3 +1,5 @@
+This is project is developed for one of my grad classes at Illinois Tech. It's an ongoing research project, henceforth the codes and notes are part of an ongoing process.
+
 # PINNs-in-Fluid-Mechanics
 
 The flow field around a fluid object, such as an airfoil, is an essential problem in fluid mechanics that has practical applications in various fields, including aerospace, marine, and civil engineering. Solving the Navier-Stokes equations to predict the flow field around a fluid object is a challenging task due to the complex geometry and boundary conditions involved. Recently, physics-informed neural networks (PINNs) have emerged as a promising technique to solve partial differential equations (PDEs) accurately and efficiently. This proposal aims to investigate the application of PINNs in fluid mechanics to predict the flow field around a fluid object by solving the Navier-Stokes equations.
