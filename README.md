@@ -14,3 +14,6 @@ where $\rho$ is the fluid density, $\textbf{v}$ is the velocity field, $p$ is th
 ## Objective
 
 The main objective of this proposal is to develop a physics-informed neural network model to predict the flow field around a fluid object by solving the Navier-Stokes equations. The specific objectives follows by constructing a dataset of Navier-Stokes solutions for the flow field around a fluid object using a numerical method, such as finite volume or finite element methods. The dataset will then be used to develop the PINN model to predict the flow field around a fluid object by incorporating the Navier-Stokes equations as a constraint. Finally, the PINN model will be trained using the dataset of Navier-Stokes solutions and evaluate its performance in predicting the flow field around a fluid object.
+
+### Questions?
+The codes I wrote here are purely for eucational purposes, so please take caution when you refer to them. For questions, comments, edit and changes, please contact me. Or tag my username <b> @eyobghiday </b> in the code.
