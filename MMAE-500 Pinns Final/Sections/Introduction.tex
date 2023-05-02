@@ -1,0 +1,17 @@
+
+The development of Physics-Informed Neural Networks (PINNs) has recently gained significant attention due to its potential to solve complex physical problems. Using PINNs to test the diffusion 2D equation for data visualization involves training a neural network to approximate the solution while incorporating physical constraints and data, and then using the trained network to predict the solution and visualize the results. PINNs is a technique that combines deep learning methods with partial differential equations (PDEs) to solve inverse problems or to learn the dynamics of physical systems. In general, a neural network can be defined as a type of machine learning algorithm inspired by the structure and function of the human brain. Neural networks can be used for a wide range of tasks, including classification, regression, and pattern recognition, and they have been applied in areas such as computer vision, natural language processing, and speech recognition. In order to use PINNs to test the diffusion 2D equation for data visualization a proper set up of the full PDE equation is needed.
+
+The fundamental 2D Diffusion equation is given by the equations described below as:
+
+
+ $$\Theta(\vec{\textbf{r}},\textbf{t})\cdot \left( \frac{1}{4 \pi \textbf{D} \textbf{t}} \right) \cdot e^{ ^ \frac{-\textbf{r}^2}{4 \textbf{D} \textbf{t}}}$$
+$$ \textbf{\mathcal{L}} = \partial_\textbf{t}-\textbf{D}\cdot\nabla^2$$
+
+where$:$
+\begin{itemize}[noitemsep]
+\item $\Theta$ is the spatial function of interest in polar coordinate. It is the concentration or density of the diffusing species at cartesian position $(x,y)$ and time $t$
+\item $\mathcal{L}$ is the linear differential operator. and
+\item $D$ is the diffusivity constant in $\frac{m^2}{s}$.
+\end{itemize}
+
+In PINNs, neural networks are used to approximate the solutions to PDEs, and the physical knowledge is encoded in the form of constraints on the network. These constraints are usually derived from the governing equations of the physical system being modeled, and they ensure that the neural network satisfies the physics of the system. By using PINNs, in this project we will  combine the strengths of both neural networks and physics-based modeling to solve complex problems in using the 2D diffusion equation. The proposed model will be tested for a successful prediction by comparing the loss function and results of the plots with the actual equation. The model should reasonably predict and asses the given data subject to an acceptable error in the realm of data science.
