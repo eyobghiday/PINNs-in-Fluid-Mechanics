@@ -43,18 +43,18 @@ year = {2023}
    url = {https://github.com/eyobghiday/PINNs-in-Fluid-Mechanics/blob/main/Eyob_Ghiday_Difussion_Derivation.pdf},
    year = {2023}
 }
-
-@article{Srivastava_2022,
-	doi = {10.1016/j.cma.2021.114333},
-	url = {https://doi.org/10.1016\%2Fj.cma.2021.114333},
-	year = {2022},
-	month = {feb},
-	publisher = {Elsevier {BV}},
-	volume = {389},
-	pages = {114333},
-	author = {Ankit Srivastava and N. Sukumar},
-	title = {Exact imposition of boundary conditions with distance functions in physics-informed deep neural networks},
-	journal = {Computer Methods in Applied Mechanics and Engineering}
+@article{Sukumar2022,
+abstract = {In this paper, we introduce a new approach based on distance fields to exactly impose boundary conditions in physics-informed deep neural networks. The challenges in satisfying Dirichlet boundary conditions in meshfree and particle methods are well-known. This issue is also pertinent in the development of physics informed neural networks (PINN) for the solution of partial differential equations. We introduce geometry-aware trial functions in artificial neural networks to improve the training in deep learning for partial differential equations. To this end, we use concepts from constructive solid geometry (R-functions) and generalized barycentric coordinates (mean value potential fields) to construct ϕ(x), an approximate distance function to the boundary of a domain in Rd. To exactly impose homogeneous Dirichlet boundary conditions, the trial function is taken as ϕ(x) multiplied by the PINN approximation, and its generalization via transfinite interpolation is used to a priori satisfy inhomogeneous Dirichlet (essential), Neumann (natural), and Robin boundary conditions on complex geometries. In doing so, we eliminate modeling error associated with the satisfaction of boundary conditions in a collocation method and ensure that kinematic admissibility is met pointwise in a Ritz method. With this new ansatz, the training for the neural network is simplified: sole contribution to the loss function is from the residual error at interior collocation points where the governing equation is required to be satisfied. Numerical solutions are computed using strong form collocation and Ritz minimization. To convey the main ideas and to assess the accuracy of the approach, we present numerical solutions for linear and nonlinear boundary-value problems over convex and nonconvex polygonal domains as well as over domains with curved boundaries. Benchmark problems in one dimension for linear elasticity, advection-diffusion, and beam bending; and in two dimensions for the steady-state heat equation, Laplace equation, biharmonic equation (Kirchhoff plate bending), and the nonlinear Eikonal equation are considered. The construction of approximate distance functions using R-functions extends to higher dimensions, and we showcase its use by solving a Poisson problem with homogeneous Dirichlet boundary conditions over the four-dimensional hypercube. The proposed approach consistently outperforms a standard PINN-based collocation method, which underscores the importance of exactly (a priori) satisfying the boundary condition when constructing a loss function in PINN. This study provides a pathway for meshfree analysis to be conducted on the exact geometry without domain discretization.},
+author = {Sukumar, N and Srivastava, Ankit},
+doi = {https://doi.org/10.1016/j.cma.2021.114333},
+issn = {0045-7825},
+journal = {Computer Methods in Applied Mechanics and Engineering},
+keywords = { Distance function, Exact geometry, Meshfree method, R-function, Transfinite interpolation,Deep learning},
+pages = {114333},
+title = {{Exact imposition of boundary conditions with distance functions in physics-informed deep neural networks}},
+url = {https://www.sciencedirect.com/science/article/pii/S0045782521006186},
+volume = {389},
+year = {2022}
 }
 
 @article{Ursell2005,
@@ -138,4 +138,52 @@ title = {{Neural Green's function for Laplacian systems}},
 url = {https://www.sciencedirect.com/science/article/pii/S0097849322001406},
 volume = {107},
 year = {2022}
+}
+@article{conradB,
+   abstract = {Liouville proved that certain integrals, most famously e −x 2 dx, cannot be expressed in elementary terms. We explain how to give precise meaning to the notion of integration "in elementary terms", and we formulate Liouville's theorem that characterizes the possible form of elementary an-tiderivatives. Using this theorem, we deduce a practical criterion for proving such impossibility results in special cases. This criterion is illustrated for the Gaussian integral e −x 2 dx from probability theory, the logarithmic integral dt/ log(t) from the study of primes, and elliptic integrals. Our exposition is aimed at students who are familiar with calculus and elementary abstract algebra (at the level of polynomial rings F [t] over a field F).},
+   author = {Brian Conrad},
+   journal = {University of Michigan},
+   title = {Impossibility theorems for elementary integration},
+   url = {https://www.claymath.org/library/academy/LectureNotes05/Conrad.pdf},
+   year = {2005},
+}
+@article{Katsnelson2023,
+abstract = {We demonstrate, both analytically and numerically, that learning dynamics of neural networks is generically attracted towards a scale-invariant state. The effect can be modeled with quartic interactions between non-trainable variables (e.g. states of neurons) and trainable variables (e.g. weight matrix). Non-trainable variables are rapidly driven towards stochastic equilibrium and trainable variables are slowly driven towards learning equilibrium described by a scale-invariant distribution on a wide range of scales.},
+author = {Katsnelson, M. I. and Vanchurin, V. and Westerhout, T.},
+doi = {10.1016/j.physa.2022.128401},
+file = {:Users/eyob/Documents/Master/University and College/Armour College of Engineering - Aerospace Engineering/2023 Spring/MMAE-500-01 Data Driven Modeling/Emergent-scale-invariance-in-neu_2023_Physica-A--Statistical-Mechanics-and-i.pdf:pdf},
+issn = {03784371},
+journal = {Physica A: Statistical Mechanics and its Applications},
+keywords = {Deep learning,Neural networks,Saddle-point approximation,Scale invariance,Statistical physics,Theory of learning},
+mendeley-groups = {Pinn},
+pages = {128401},
+publisher = {Elsevier B.V.},
+title = {{Emergent scale invariance in neural networks}},
+url = {https://doi.org/10.1016/j.physa.2022.128401},
+volume = {610},
+year = {2023}
+}
+@book{Nair2011,
+abstract = {Advanced Topics in Applied Mathematics covers four essential applied mathematics topics: Green's functions, integral equations, Fourier transforms, and Laplace transforms. Also included is auseful discussion of topics such as the Wiener-Hopf method, finite Hilbert transforms, Cagniard–De Hoop method, and the proper orthog- onal decomposition. This book reflects Sudhakar Nair's long classroom experience and includes numerous examples of differential and integral equations from engineering and physics to illustrate the solution proce- dures. The text includes exercise sets at the end of each chapter and a solutions manual, which is available for instructors. SudhakarNair is the Associate Dean for AcademicAffairs of the Graduate College, Professor of Mechanical Engineering and Aerospace Engineer- ing, and Professor of Applied Mathematics at the Illinois Institute of Technology in Chicago. He is a Fellow of the ASME, an Associate Fellow of the AIAA, and a member of the American Academy of Mechanics as well as Tau Beta Pi and Sigma Xi. Professor Nair is the author ofnumerous research articles and Introduction to Continuum Mechanics (2009).},
+author = {Nair, Sudhakar},
+file = {:Users/eyob/Documents/Master/University and College/Armour College of Engineering - Aerospace Engineering/2023 Spring/MMAE-502-01 Engineering Analysis II/Sudhakar Nair - Advanced Topics in Applied Mathematics_ For Engineering and the Physical Sciences-Cambridge University Press (2011).pdf:pdf},
+isbn = {9788527729833},
+mendeley-groups = {Pinn},
+publisher = {Cambridge University Press},
+title = {{Advanced Topics in Applied Mathematics This}},
+url = {www.cambridge.org/9781107006201},
+year = {2011}
+}
+@article{Srivastava2018,
+abstract = {Summary We show that deep convolutional neural networks (CNNs) can massively outperform traditional densely connected neural networks (NNs) (both deep or shallow) in predicting eigenvalue problems in mechanics. In this sense, we strike out in a new direction in mechanics computations with strongly predictive NNs whose success depends not only on architectures being deep but also being fundamentally different from the widely used to date..},
+author = {Finol, David and Lu, Yan and Mahadevan, Vijay and Srivastava, Ankit},
+doi = {https://doi.org/10.1002/nme.6012},
+journal = {International Journal for Numerical Methods in Engineering},
+keywords = {Phononic crystal,convolutional neural networks,deep learning in mechanics},
+number = {5},
+pages = {258--275},
+title = {{Deep convolutional neural networks for eigenvalue problems in mechanics}},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.6012},
+volume = {118},
+year = {2019}
 }
