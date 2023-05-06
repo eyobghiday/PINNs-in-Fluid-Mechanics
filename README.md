@@ -1,13 +1,15 @@
 # PINNs
 This is a <b> two-part </b> project that is being developed for the spring of 2023 at Illinois Tech. It's an ongoing project, henceforth the codes and notes are part of the learning experience and not a final product. The first section of this project attempts to use PINN on diffusion 2D probelm. The main code is the [main_diffussion.py](main_diffusion.py) file. The second project will focus on the Navier-Stokes equations, which I haven't finished yet. Please feel free to suggest me any ideas or inputs. 
 
-Physics-Informed Neural Networks (PINNs) are a type of neural network that can solve partial differential equations. PINNs combine the flexibility of neural networks with the physical constraints of the underlying partial differential equations. In this project, we use a PINN to solve the one-dimensional diffusion equation. The PINN takes the initial and boundary conditions as input and predicts the concentration of the diffusing substance at any point in space and time. This project aims to solve the one-dimensional diffusion equation using Physics-Informed Neural Networks (PINNs) and visualize the results. This project also includes the full [derviation](Eyob_Ghiday_Difussion_Derivation.pdf) of diffusion equation in both polar and carrtesian coordinates. The advantages, limitations, and opportunities of using physics-informed neural networks for data-driven simulations are also discussed in the [report](Eyob_PINN_2D_Diffusion_Equation_[2023].pdf). 
+Physics-Informed Neural Networks (PINNs) are a type of neural network that can solve partial differential equations. PINNs combine the flexibility of neural networks with the physical constraints of the underlying partial differential equations. In this project, I utilisea PINN to solve the two-dimensional diffusion equation. The PINN takes the initial and boundary conditions as input and predicts the concentration of the diffusing substance at any point in space and time. This project aims to solve the thee diffusion equation using Physics-Informed Neural Networks (PINNs) and visualize the results. This project also includes the full [derviation](Eyob_Ghiday_Difussion_Derivation.pdf) of diffusion equation in both polar and carrtesian coordinates. The advantages, limitations, and opportunities of using physics-informed neural networks for data-driven simulations are also discussed in the [report](Eyob_PINN_2D_Diffusion_Equation_[2023].pdf). 
 
 ## 1. Diffusion Equation
 
-The diffusion equation is a partial differential equation that describes the diffusion of a substance in space. The one-dimensional form of the diffusion equation is given by:
+The diffusion equation is a partial differential equation that describes the diffusion of a substance in space. The two-dimensional form of the diffusion equation is given by:
 
-$$ \frac{\partial u}{\partial t} = D \frac{\partial^2 u}{\partial x^2} $$
+$$ \nabla^2 - \frac{1}{D} \frac{\partial u}{ \partial t} = 0 $$
+
+$$ \frac{\partial^2 u}{ \partial^2 x^2} + \frac{\partial^2 u}{ \partial^2 y^2}  - \frac{1}{D} \frac{\partial u}{ \partial t} = 0 $$
 
 where $u(x, t)$ is the concentration of the diffusing substance at position $x$ and time $t$, and $D$ is the diffusion coefficient.
 
