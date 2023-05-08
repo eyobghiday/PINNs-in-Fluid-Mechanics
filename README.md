@@ -29,7 +29,7 @@ The main objective of this projeect is to develop a physics-informed neural netw
 
 ## Results
 
-The PINN successfully solves the one-dimensional diffusion equation and produces the following plots:
+The PINN successfully solves the two-dimensional diffusion equation and produces the following plots:
 
 - The predicted concentration of the diffusing substance at specific times during the diffusion process.
 - The concentration of the diffusing substance at different values of the diffusion coefficient on the same plot, for comparison.
